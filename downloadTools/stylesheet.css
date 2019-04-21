@@ -1,0 +1,105 @@
+/*Css style for downloadgame page */
+#banner h1 {
+    /*font-family: Palatino;*/
+    text-align: center;
+    /*color: white;*/
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#banner {
+    background-color: rgba(0,0,0,0.5) !important;
+   `padding: 5px;
+    margin-bottom: 0;
+    margin-top: 0;
+    border-radius: 20px 20px 0px 0px; 
+    
+}
+
+#btmctn {
+   /*background-color: #d3d3d3;*/   
+    padding: 0px;
+}
+
+#box {
+    margin: 10px;
+	position: relative;
+}
+
+@media (min-width: 960px) {
+    
+    #downloadbutton {
+        float: right;
+        top:11px;
+	position: absolute;
+	margin-top: 2px;
+	}
+
+}
+
+@media (max-width: 960px) {
+    #downloadbutton {
+    	margin:-7px;
+	padding: 0px;
+    }
+
+	#box {
+		padding: 0px;
+		padding-top: 20px;
+	}
+}
+
+#box h3 {
+    font-size: 20px;
+    margin: 0px 0px 20px 0px;
+    padding:opx; 
+    color: white;
+    
+}
+
+/*
+h2 {
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+  margin: 20px 20px;
+}
+
+#bannerctnr {
+  background: rgba(0, 26, 20, 0.5);
+  border-bottom: groove; 
+}
+
+#bannerctnr h1 {
+  font-size: 80px;
+  font-family: arial;
+  letter-spacing: 1.4px; 
+  text-align: center;
+  opacity: .9;
+  text-shadow: #fff 0px 1px 1px;
+  align-content: center;
+}
+*/
+
+#container {
+  width: 80%;
+  margin: auto;
+  height: 100%;
+ -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  align-content: center;
+}
+
+
+
+/*#downloadButton {
+  position: absolute;
+  margin-top: -1%;
+}*/
+   
+body {
+  background-color:black;
+}
+

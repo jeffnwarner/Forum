@@ -1,0 +1,13 @@
+a.uploaderName, a.uploaderName:link, a.uploaderName:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+a.uploaderName:hover{
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+

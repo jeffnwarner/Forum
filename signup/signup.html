@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Warcraft II</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../stylesheet.css">
+	<link rel="stylesheet" href="../login/stylesheet.css">
+	<link rel="stylesheet" href="stylesheet.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- Nav Bar -->
+<div id="navbar"></div>
+<script>
+        $("#navbar").load("../navbar/navbar.html")
+</script>
+
+<!-- Login form -->
+<div class="div1 col-xs-12 col-sm-6 col-sm-offset-3" id="border-gold">
+	<br><br><br>
+        <h1 class="text-center">Sign Up</h1>
+        <form id="form" action="signup.php" method="post" enctype="multipart/form-data">
+		    <p>Email</p>
+            <input type="email" id="email" name="email" placeholder="Enter Email">
+            <div id="alertEmail" class="alert alert-danger collapse">
+                <strong>Error: </strong> Please avoid newline, space, and "|"
+            </div>
+            <br><br>
+            <p>Username</p>
+            <input type="user" id="username" name="username" placeholder="Enter Username">
+		    <div id="alertUser" class="alert alert-danger collapse">
+                <strong>Error: </strong> Please avoid newline, space, and "|"
+            </div>
+            <br><br>
+            <p>Password</p>
+            <input type="password" id="password" name="password" placeholder="Enter Password">
+		    <div id="alertPass" class="alert alert-danger collapse">
+                <strong>Error: </strong> Please avoid newline, space, and "|"
+            </div>
+            <br><br>
+            <div class="text-center">
+		        <button id="btnSubmit" onclick="return signUpError(this)" class="btn btn-fancy-signup"></button>
+                <br>
+		        Already have an account?
+		        <a href="../login/login.html">Click Here</a>
+            </div>
+            <br><br>
+		    <div id="alertRequired" class="alert alert-danger collapse container col-xs-12" style="position: relative; margin: 0px;">
+                <strong>Error: </strong> Please fill in all of the required fields
+            </div>
+	    	<div id="alertMax" class="alert alert-danger collapse container col-xs-12" style="position: relative; margin: 0px;">
+                <strong>Error: </strong> Please keep fields under 80 characters
+            </div>
+    		<div id="alertGeneral" class="alert alert-danger collapse container col-xs-12" style="position: relative; margin: 0px;">
+                <strong>Error: </strong> Something went wrong
+            </div>
+	    </form>
+		<br><br><br>
+</div>
+
+</body>
+<script type="text/javascript" src="../login/black.js"></script>
+<script type="text/javascript" src="signup.js"></script>
+</html>
